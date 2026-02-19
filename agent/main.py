@@ -1,4 +1,4 @@
-from config import JSONBLOB_URL
+from config import JSONBLOB_ID
 from PIL import Image
 import pyautogui
 import requests
@@ -10,7 +10,7 @@ import os
 
 def main() -> None:
     while True:
-        response = requests.get(JSONBLOB_URL)
+        response = requests.get(f"https://api.jsonblob.com/{JSONBLOB_ID}")
         data = response.json()
 
         if data["command"] is not None:
@@ -27,7 +27,7 @@ def main() -> None:
             data["command"] = None
 
         data["screen"] = screenshot_to_data_url()
-        requests.put(JSONBLOB_URL, json=data)
+        requests.put(f"https://api.jsonblob.com/{JSONBLOB_ID}", json=data)
         print("JSONBLOB updated")
         time.sleep(4)
 
