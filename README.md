@@ -82,7 +82,7 @@ The agent runs on the machine you want to control.
 `agent/config.py`
 
 ```python
-JSONBLOB_URL = "https://api.jsonblob.com/019c7462-ad90-7822-8ddf-b2cdffb86919"
+JSONBLOB_URL = ""
 ```
 
 Both the agent and dashboard must use the same URL.
