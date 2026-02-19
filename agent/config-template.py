@@ -1,1 +1,1 @@
-JSONBLOB_URL = ""
+JSONBLOB_ID = ""
