@@ -1,4 +1,4 @@
-# Remote Desktop Agent (JSONBlob-Based)
+# Remote Desktop Agent
 
 A minimal remote desktop control system built on top of **[JSONBlob](https://jsonblob.com/)** as a lightweight command-and-state transport layer.
 
