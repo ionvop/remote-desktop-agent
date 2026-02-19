@@ -289,18 +289,6 @@ Just REST polling.
 
 ---
 
-# 🚀 Possible Improvements
-
-* Authentication layer
-* Command queue instead of single command slot
-* HTTPS proxy with access control
-* WebSocket instead of polling
-* Better image compression
-* Clipboard sync
-* File transfer support
-
----
-
 # 🛑 Limitations
 
 * 4-second latency
