@@ -27,7 +27,7 @@ The dashboard:
 This project allows **remote execution of system commands and input control**.
 
 * There is **no authentication**
-* Anyone with access to the JSONBlob URL can control the machine
+* Anyone with access to the JSONBlob ID can control the machine
 * `run` executes arbitrary shell commands via `os.system`
 
 ⚠️ **Do NOT expose this publicly.**
@@ -82,10 +82,10 @@ The agent runs on the machine you want to control.
 `agent/config.py`
 
 ```python
-JSONBLOB_URL = ""
+JSONBLOB_ID = ""
 ```
 
-Both the agent and dashboard must use the same URL.
+Both the agent and dashboard must use the same ID.
 
 ---
 
