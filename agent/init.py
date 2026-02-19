@@ -1,5 +1,5 @@
+from config import JSONBLOB_ID
 import requests
-import config
 
 
 def main() -> None:
@@ -8,7 +8,7 @@ def main() -> None:
         "screen": ""
     }
 
-    requests.put(config.JSONBLOB_URL, json=data)
+    requests.put(f"https://api.jsonblob.com/{JSONBLOB_ID}", json=data)
     print("JSONBLOB initialized")
 
 
